@@ -1,0 +1,23 @@
+package javaapplication4;
+
+import java.util.Scanner;
+
+public class JavaApplication4 {
+    
+    public static boolean isPrimo(int valor){
+        
+       boolean divisor = false;
+       
+       for(int i = 2; (!divisor && i < valor); i++){
+        if(valor%i == 0) divisor = true;           
+        }
+       return !divisor;
+    }
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        for (int i = 2; i < 50; i++){
+          System.out.println("o numero" + i + isPrimo(i));
+        }        
+    }    
+}
