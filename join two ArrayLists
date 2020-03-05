@@ -1,0 +1,50 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package ex01;
+//import java.util.Set;
+//import java.util.HashSet;
+//import java.util.LinkedHashSet;
+//import java.util.TreeSet;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
+
+/**
+ *
+ * @author MauricioAsenjo
+ */
+public class Ex01 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        ArrayList <String> list1 = new ArrayList <String>(); 
+  
+        list1.add("alice"); 
+        list1.add("ednei"); 
+        list1.add("junior"); 
+  
+        System.out.println("familia 1: " + list1); 
+  
+        ArrayList <String> list2 = new ArrayList <String>(); 
+  
+        list2.add("cida"); 
+        list2.add("ari"); 
+        list2.add("aryan"); 
+        list2.add("aryelle"); 
+  
+        System.out.println("familia 2: " + list2); 
+   
+        list1.addAll(list2); 
+  
+        System.out.println("Joined ArrayLists: " + list1);
+
+    }
+    
+}
