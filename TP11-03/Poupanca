@@ -1,0 +1,20 @@
+package javaapplication2;
+
+
+import javaapplication2.Conta;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author unisanta
+ */
+
+public class Poupanca extends Conta{
+	public Poupanca(float valor) { }
+	public void doCorrecao(float valor) { saldo += saldo*valor/100; }
+}
