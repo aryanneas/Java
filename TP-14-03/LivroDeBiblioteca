@@ -1,0 +1,67 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tp1403;
+
+/**
+ *
+ * @author unisanta
+ */
+public class LivroDeBiblioteca extends Livro implements ItemDeBiblioteca{
+
+   boolean emprestado;
+   String localizacao;
+
+    @Override
+    public String getDados() {
+        
+        
+        return super.getDados();
+        
+        //To change body of generated methods, choose Tools | Templates.
+    }
+   
+    
+    @Override
+    public boolean setEmprestado(boolean emprestado) {
+      
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String setLocalizacao(String localizacao) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean getEmprestado() {
+        Empresta();
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String getLocalizacao() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void Empresta() {
+        this.emprestado = true;
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void Devolve() {
+        this.emprestado = false;
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
+    public LivroDeBiblioteca(String titulo, String anoEdicao, String autor, String editora,
+            String localizacao, boolean emprestado){
+        super(titulo, anoEdicao, autor, editora);
+        emprestado = true;
+    }
+}
