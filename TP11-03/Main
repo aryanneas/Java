@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication2;
+
+/**
+ *
+ * @author unisanta
+ */
+public class JavaApplication2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       
+		Conta cc1 = new Conta(500f);
+		Conta cc2 = new Conta(1000f);
+		
+		cc1.doCredito(300);
+		cc2.doDebito(200);
+		cc1.doTransferencia(cc2, 400);
+		System.out.println("Saldo da conta 1: R$" + cc1.saldo);
+		System.out.println("Saldo da conta 2: R$" + cc2.saldo);
+		
+		Poupanca cp = new Poupanca(300);
+		
+		cc2.doTransferencia(cp, 250);
+		
+		System.out.println("Saldo da conta 2: R$" + cc2.saldo);
+		System.out.println("Saldo da conta poupança: R$" + cp.saldo);
+		
+		cp.doCorrecao(0.65f);
+		
+		System.out.println("Saldo da conta poupança: R$" + cp.saldo);
+	}
+    }
+    
+
